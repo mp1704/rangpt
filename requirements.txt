@@ -1,7 +1,7 @@
+FlagEmbedding
 chainlit
 fastapi
 uvicorn
-FlagEmbedding
 huggingface_hub
 python-dotenv
 qdrant-client

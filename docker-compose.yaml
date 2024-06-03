@@ -1,0 +1,18 @@
+services:
+  my_chatbot:
+    image: rangpt_img:v2
+    container_name: rangpt_container
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+    deploy:
+        resources:
+          reservations:
+            devices:
+              - driver: nvidia
+                count: all
+                capabilities: [gpu]

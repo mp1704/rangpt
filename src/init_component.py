@@ -13,7 +13,7 @@ reranker = FlagReranker('BAAI/bge-reranker-v2-m3',
 
 client = QdrantClient(
    url = "https://e69451a1-5421-44b2-804e-7cfd44b35d4f.us-east4-0.gcp.cloud.qdrant.io:6333",
-   api_key=os.os.environ['qdrant_api_key'],
+   api_key=os.environ['qdrant_api_key'],
 )
 
 def qdrant_search(collection_name, reformulated_query, limit):
