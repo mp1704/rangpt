@@ -1,12 +1,10 @@
 # RANGPT
 **in progress**
 ## I. Demo
-### Chatbot with Chainlit
 
-![cl_demo](assets/images/cl_demo_img.png)
-
-### Single request with FastAPI
-![qa demo](assets/images/fastapi_demo_img.png)
+|Chatbot with Chainlit       | QA with FastAPI                         |
+|----------------------------|----------------------------|
+| [<img src="assets/images/cl_demo_img.png" width="500" height="500"/>](image.png) | [<img src="assets/images/fastapi_demo_img.png" width="500" height="500"/>](image.png) |
 
 ## II. How to use 
 - First, go to the src folder, create a .env file, and then add the Qdrant API key and HuggingFace token (make sure you have access to Viet-Mistral/Vistral-7B-Chat) with the following format:
