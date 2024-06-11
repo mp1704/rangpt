@@ -23,7 +23,8 @@ pipeline {
             steps {
                 echo 'Simple QA API testing..'
                 sh 'pip install --no-cache-dir --upgrade pip'
-                sh 'pip install -r requirements.txt && pytest'
+                sh 'pip install -r requirements.txt'
+                sh 'python -m pytest'
             }
         }
         stage('Build and Push') {
