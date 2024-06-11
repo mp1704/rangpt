@@ -17,11 +17,12 @@ pipeline {
         stage('Test') {
             agent {
                 docker {
-                    image 'python:3.10' 
+                    image 'python:3.10-slim' 
                 }
             }
             steps {
-                echo 'Simple Api Testing..'
+                echo 'Simple QA API testing..'
+                sh 'pip install --no-cache-dir --upgrade pip'
                 sh 'pip install -r requirements.txt && pytest'
             }
         }
