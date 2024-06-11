@@ -21,7 +21,7 @@ pipeline {
                 }
             }
             steps {
-                echo 'Testing model correctness..'
+                echo 'Simple Api Testing..'
                 sh 'pip install -r requirements.txt && pytest'
             }
         }
