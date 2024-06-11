@@ -24,6 +24,7 @@ pipeline {
                 echo 'Simple QA API testing..'
                 sh 'pip install --no-cache-dir --upgrade pip'
                 sh 'pip install -r requirements.txt'
+                sh 'pip install pytest'
                 sh 'python -m pytest'
             }
         }
